@@ -3,6 +3,7 @@ import Categories from './components/Categories'
 import Header from './components/Header'
 import Sort from './components/Sort'
 import PizzaBlock from './components/PizzaBlock'
+import items from './assets/dataSRC/data.json'
 import './scss/app.scss'
 
 function App() {
@@ -13,14 +14,14 @@ function App() {
         <div className="content">
           <div className="container">
             <div className="content__top">
-              <Categories />
+              {/* <Categories /> */}
               <Sort />
             </div>
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
-              <PizzaBlock title="Мексиканская" price= {1250}/>
-              <PizzaBlock title="Гавайская" price= {850}/>
-              <PizzaBlock title="Вигетерианская" price= {550}/>
+              {items.map((obj) => (
+                <PizzaBlock key={obj.id} {...obj} />
+              ))}
             </div>
           </div>
         </div>
