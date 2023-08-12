@@ -13,7 +13,7 @@ export const SearchContext = React.createContext()
 function App() {
   const [searchValue, setSearchValue] = useState('')
 
-  console.log(searchValue, 'Input changes')
+
 
   return (
     <div className="App">
