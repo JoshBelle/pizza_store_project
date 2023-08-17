@@ -4,18 +4,15 @@
   border-bottom: 1px solid $gray-line;
   padding: 40px 0;
 
-
-
-
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     @media (max-width: 645px) {
-      flex-direction:  column;
+      flex-direction: column;
 
-      .header__cart{
+      .header__cart {
         margin-top: 20px;
       }
     }
@@ -23,18 +20,6 @@
 
   &__logo {
     display: flex;
-
-    @media (max-width: 645px) {
-      flex-direction:  column;
-      justify-content: center;
-      align-items: center;
-
-      h1{
-        text-align: center;
-        margin-top: 20px;
-      }
-    }
-  
 
     img {
       margin-right: 15px;
